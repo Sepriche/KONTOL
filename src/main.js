@@ -9,12 +9,12 @@ const config = require('./config');
 const { Message, OpType, Location } = require('../curve-thrift/line_types');
 //let exec = require('child_process').exec;
 
-const myBot = ['ใส่midตรงนี้นะ','u039d3e7645cdf9b119ae0bd765aec8db'];
+const myBot = ['ใส่midตรงนี้นะ','ub95fb4cb209e39a594e51c09e2c5fd8c'];
 const banList = [];//Banned list
 var groupList = new Array();//Group list
 var vx = {};var midnornama,pesane,kickhim;var waitMsg = "no";//DO NOT CHANGE THIS
 const imgArr = ['png','jpg','jpeg','gif','bmp','webp'];//DO NOT CHANGE THIS
-var komenTL = "AutoLike by THIRDz\nhttps://line.me/ti/p/~thirdz1"; //Comment for timeline
+var komenTL = "AutoLike by xxx\nhttps://line.me/ti/p/~xxx"; //Comment for timeline
 var bcText = "Masukan teks untuk broadcast";
 var limitposts = '10'; //Output timeline post
 
