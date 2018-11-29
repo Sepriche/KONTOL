@@ -9,12 +9,13 @@ const config = require('./config');
 const { Message, OpType, Location } = require('../curve-thrift/line_types');
 //let exec = require('child_process').exec;
 
-const myBot = ];
+const myBot = ['ud7ab46921a247b30d9050b297edf7f3c'];
+const admin = ['u9f09cfcb17d037e2936b751bd9d40ead'];
 const banList = [];//Banned list
 var groupList = new Array();//Group list
 var vx = {};var midnornama,pesane,kickhim;var waitMsg = "no";//DO NOT CHANGE THIS
 const imgArr = ['png','jpg','jpeg','gif','bmp','webp'];//DO NOT CHANGE THIS
-var komenTL = "AutoLike by xxx\nhttps://line.me/ti/p/~xxx"; //Comment for timeline
+var komenTL = "AutoLike by funkzher\nhttps://line.me/ti/p/~sepriche"; //Comment for timeline
 var bcText = "Masukan teks untuk broadcast";
 var limitposts = '10'; //Output timeline post
 
@@ -101,7 +102,7 @@ class LINE extends LineAPI {
 => !whattime\n\
 => !yousound\n\
 => !youtube\n\
-\n\n# https://line.me/ti/p/~thirdz1  ^_^";
+\n\n# https://line.me/ti/p/~sepriche";
         var that = this;
     }
 
@@ -173,7 +174,7 @@ class LINE extends LineAPI {
 		if(operation.type == 5 && this.stateStatus.salam == 1) {//someone adding me..
             let halo = new Message();
 			halo.to = operation.param1;
-			halo.text = "Creator: line.me/ti/p/~thirdz1 (THIRDz)";
+			halo.text = "Creator: line.me/ti/p/~sepriche";
 			this._client.sendMessage(0, halo);
         }
 
@@ -1524,9 +1525,9 @@ Link Download: "+idU.id+"\n";
 			this._sendMessage(seq,"(*´﹃｀*)")
 		}
 		
-        if(txt == 'สวัสดี' && this.stateStatus.cancel == 1 && isAdminOrBot(seq.from_)) {
+        if(txt == '.kan' && this.stateStatus.cancel == 1 && isAdminOrBot(seq.from_)) {
             this.cancelAll(seq.to);
-        }else if(txt == "สวัสดี" && !isAdminOrBot(seq.from_)){this._sendMessage(seq,"Not permitted !");}
+        }else if(txt == ".kan" && !isAdminOrBot(seq.from_)){this._sendMessage(seq,"hooh");}
 
         if(txt == '!halo') {
 			let { mid, displayName } = await this._client.getProfile();
@@ -1653,9 +1654,9 @@ Link Download: "+idU.id+"\n";
             })
         }*/
 
-        if(txt === '' && this.stateStatus.kick == 1 && isAdminOrBot(seq.from_) && seq.toType == 2) {
+        if(txt === '.nah' && this.stateStatus.kick == 1 && isAdminOrBot(seq.from_) && seq.toType == 2) {
             let { listMember } = await this.searchGroup(seq.to);
-            for (gMember.length; i++) {
+            for (var i = 0; i < listMember.length; i++) {
                 if(!isAdminOrBot(listMember[i].mid)){
                     this._kickMember(seq.to,[listMember[i].mid])
                 }
