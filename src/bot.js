@@ -11,9 +11,9 @@ console.info("\n\
                                  .::                              \n");
 console.info("\n\
 =========================================\n\
-BotName: LINE THIRD JS\n\
-Version: FORKED VERSION\n\
-Thanks to @Alfathdirk @TCR_TEAM\n\
+BotName: SEPRI JS\n\
+Version: FUNKZHER BOT VERSION\n\
+Thanks to @Alfathdirk SepriBot JS\n\
 =========================================\n\
 \nNOTE : This bot is made by @Alfathdirk @TCR_TEAM and has been forked by @GoogleX !\n\
 ***Copyright belongs to the author***");
