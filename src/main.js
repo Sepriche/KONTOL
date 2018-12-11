@@ -140,7 +140,7 @@ class LINE extends LineAPI {
 		if(operation.type == 16 && this.stateStatus.salam == 1){//join group
 			let halo = new Message();
 			halo.to = operation.param1;
-			halo.text = "สวัสดี";
+			halo.text = "salken";
 			this._client.sendMessage(0, halo);
 		}
 		
@@ -148,7 +148,7 @@ class LINE extends LineAPI {
 		    let halobos = new Message();
 			halobos.to = operation.param1;
 			halobos.toType = 2;
-			halobos.text = "สวัสดีครับ !, ยินดีต้อนรับ !";
+			halobos.text = "met gabung mblo !, met join mblo !";
 			this._client.sendMessage(0, halobos);
 		}else if(operation.type == 17 && this.stateStatus.salam == 1){//ada yang join
 			let seq = new Message();
